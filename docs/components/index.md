@@ -1,18 +1,36 @@
-# Components list
+ # Components list
 
-## Family Native
+  At the moment, we are in public beta state. BigQuery and Carto Data Warehouse are the only available providers for Workflows.
+  If you are interested in testing other providers, let us know at support@carto.com### Compatibility Mode
+
+| Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
+| :--------------------- | :------: | :-------: | :------: | :--------: |
+| [Buffer](./alteryx.buffer.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Distance](./alteryx.distance.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Join](./alteryx.join.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Union ](./ateryx.union.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Append Fields](./alteryx.appendfields.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Create Points](./alteryx.createpoints.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Find Nearest](./alteryx.findnearest.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Generalize](./alteryx.generalize.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Poly-Build](./alteryx.polybuild.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Poly-Split](./alteryx.polysplit.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Create Points](./alteryx.createpoints.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Spatial Match](./alteryx.spatialmatch.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [Spatial Process](./alteryx.spatialprocess.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [Trade Areas](./alteryx.tradeareas.md)|:heavy_check_mark:|:x:|:x:|:x: |
 ### Spatial Operations
 
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
 | :--------------------- | :------: | :-------: | :------: | :--------: |
 | [ST_AREA](./native.area.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_BOUNDINGBOX](./native.boundingbox.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [ST_CENTROID](./native.centroid.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [ST_CENTROID](./native.centroid.md)|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark: |
 | [CLIP_WITH_POLYGONS](./native.clipwithpolygons.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_CONCAVEHULL](./native.concavehull.md)|:heavy_check_mark:|:x:|:x:|:x: |
 | [ST_CONVEXHULL](./native.convexhull.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_EXTENT](./native.extent.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [ST_BUFFER](./native.buffer.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [ST_BUFFER](./native.buffer.md)|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_LENGTH](./native.length.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_PERIMETER](./native.perimeter.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_SIMPLIFY](./native.simplify.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -23,7 +41,7 @@
 | :--------------------- | :------: | :-------: | :------: | :--------: |
 | [ST_ASGEOJSON](./native.asgeojson.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_ASTEXT](./native.aswkt.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [ST_GEOCODE](./native.geocode.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [ST_GEOCODE](./native.geocode.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
 | [ST_GEOGFROMTEXT](./native.geogfromtext.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_GEOGPOINT](./native.geogpoint.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [TABLE_FROM_GEOJSON](./native.tablefromgeojson.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -45,7 +63,7 @@
 | [CREATE_COLUMN](./native.selectexpression.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [WHERE](./native.where.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [UNION_ALL](./native.unionall.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [UNNEST](./native.unnest.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [UNNEST](./native.unnest.md)|:heavy_check_mark:|:x:|:x:|:x: |
 ### Geographic Tools
 
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
@@ -62,7 +80,7 @@
 | [ST_GEOGFROMSTATICTEXT](./native.geogfromstatictext.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_GEOMETRYTYPE](./native.geometrytype.md)|:heavy_check_mark:|:x:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_INTERSECTION](./native.intersection.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [CREATE_ISOLINES](./native.isolines.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [CREATE_ISOLINES](./native.isolines.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
 | [KNN_NEIGHBORS](./native.knn.md)|:heavy_check_mark:|:x:|:x:|:x: |
 | [ST_MAKELINE](./native.makeline.md)|:heavy_check_mark:|:x:|:x:|:heavy_check_mark: |
 | [ST_MAKEPOLYGON](./native.makepolygon.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -73,6 +91,7 @@
 | [POINT_STATS_IN_POLYGONS](./native.pointstatsinpolygons.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_POLYGONIZE](./native.polygonize.md)|:heavy_check_mark:|:x:|:x:|:x: |
 | [REMOVE_HOLES](./native.removeholes.md)|:heavy_check_mark:|:x:|:x:|:heavy_check_mark: |
+| [ST_SetSRID](./native.setsrid.md)|:x:|:x:|:heavy_check_mark:|:heavy_check_mark: |
 | [SPATIAL_FILTER](./native.spatialfilter.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [SPATIAL_JOIN](./native.spatialjoin.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_X/ST_Y](./native.xycoords.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -88,7 +107,7 @@
 | :--------------------- | :------: | :-------: | :------: | :--------: |
 | [CAST](./native.cast.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_GENERATEPOINTS](./native.generatepoints.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [GENERATE_UUID](./native.generateuuid.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
+| [GENERATE_UUID](./native.generateuuid.md)|:heavy_check_mark:|:heavy_check_mark:|:x:|:x: |
 | [ST_LINE_INTERPOLATE_POINT](./native.lineinterpolatepoint.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [NORMALIZE](./native.normalize.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [REMOVE_DUPLICATED](./native.removeduplicatedrows.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -98,18 +117,18 @@
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
 | :--------------------- | :------: | :-------: | :------: | :--------: |
 | [ST_CLUSTERDBSCAN](./native.clusterdbscan.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [ST_CLUSTERKMEANS](./native.clusterkmeans.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [ST_CLUSTERKMEANS](./native.clusterkmeans.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [ST_COUNT_POINTSINPOLYGONS](./native.countpointsinpolygons.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [ST_DELAUNAYPOLYGONS](./native.delaunay.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [ST_VORONOI](./native.voronoi.md)|:heavy_check_mark:|:x:|:x:|:x: |
+| [ST_DELAUNAYPOLYGONS](./native.delaunay.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [ST_VORONOI](./native.voronoi.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 ### Spatial Indexes
 
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
 | :--------------------- | :------: | :-------: | :------: | :--------: |
-| [H3_BOUNDARY](./native.h3boundary.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [H3_CENTER](./native.h3center.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [H3_FROMGEOGPOINT](./native.h3frompoint.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [H3_POLYFILL](./native.h3polyfill.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [H3_BOUNDARY](./native.h3boundary.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
+| [H3_CENTER](./native.h3center.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
+| [H3_FROMGEOGPOINT](./native.h3frompoint.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
+| [H3_POLYFILL](./native.h3polyfill.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:x: |
 | [QUADBIN_BOUNDARY](./native.quadbinboundary.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [QUADBIN_CENTER](./native.quadbincenter.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [QUADBIN_FROMGEOGPOINT](./native.quadbinfrompoint.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
@@ -121,27 +140,8 @@
 | [IMPORT_FROM_URL](./native.importurl.md)|:heavy_check_mark:|:x:|:x:|:x: |
 | [SAVE_AS_TABLE](./native.saveastable.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
 | [SEND_BY_EMAIL](./SaveToBucketAndNotify.md)|:heavy_check_mark:|:x:|:x:|:x: |
-
-## Family Compatibility Mode
-### Spatial
+### __internal
 
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
 | :--------------------- | :------: | :-------: | :------: | :--------: |
-| [Buffer](./alteryx.buffer.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [Distance](./alteryx.distance.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [Create Points](./alteryx.createpoints.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Find Nearest](./alteryx.findnearest.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Generalize](./alteryx.generalize.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [Poly-Build](./alteryx.polybuild.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Poly-Split](./alteryx.polysplit.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Create Points](./alteryx.createpoints.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Spatial Match](./alteryx.spatialmatch.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Spatial Process](./alteryx.spatialprocess.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [Trade Areas](./alteryx.tradeareas.md)|:heavy_check_mark:|:x:|:x:|:x: |
-### Join
-
-| Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
-| :--------------------- | :------: | :-------: | :------: | :--------: |
-| [Join](./alteryx.join.md)|:heavy_check_mark:|:x:|:x:|:x: |
-| [Union ](./ateryx.union.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
-| [Append Fields](./alteryx.appendfields.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+| [READ_TABLE](./ReadTable.md)|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
