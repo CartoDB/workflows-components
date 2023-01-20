@@ -11,3 +11,7 @@
 
 ## Outputs
 * `Result table [Table]`: 
+
+## External links
+[BigQuery reference](https://docs.carto.com/data-and-analysis/analytics-toolbox-for-bigquery/sql-reference/clustering#st_clusterkmeans)
+      

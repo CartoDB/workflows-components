@@ -18,3 +18,7 @@
 * `Drop duplicates [Boolean]`: 
 
 ## Outputs
+
+## External links
+[BigQuery reference](https://docs.carto.com/data-and-analysis/analytics-toolbox-for-bigquery/sql-reference/tiler#create_tileset)
+      

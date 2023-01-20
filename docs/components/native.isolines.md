@@ -13,3 +13,7 @@
 
 ## Outputs
 * `Result table [Table]`: 
+
+## External links
+[BigQuery reference](https://docs.carto.com/analytics-toolbox-bigquery/sql-reference/lds/#create_isolines)
+      

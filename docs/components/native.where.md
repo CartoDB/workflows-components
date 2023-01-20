@@ -14,3 +14,7 @@
 ## Outputs
 * `Table with rows that pass the filter [Table]`: 
 * `Table with rows that do not pass the filter [Table]`: 
+
+## External links
+[BigQuery reference](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#where_clause)
+      

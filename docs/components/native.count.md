@@ -9,3 +9,7 @@
 
 ## Outputs
 * `Result table [Table]`: 
+
+## External links
+[BigQuery reference](https://cloud.google.com/bigquery/docs/reference/standard-sql/aggregate_functions#count)
+      

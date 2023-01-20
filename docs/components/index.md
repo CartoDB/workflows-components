@@ -1,7 +1,10 @@
  # Components list
 
-  At the moment, we are in public beta state. BigQuery and Carto Data Warehouse are the only available providers for Workflows.
-  If you are interested in testing other providers, let us know at support@carto.com### Compatibility Mode
+  CARTO Workflows is currently available in beta for BigQuery and CARTO Data Warehouse connections,
+  and it might be subject to changes. To learn more about this tool please check our
+  [product documentation](https://docs.carto.com/carto-user-manual/workflows)
+
+  ### Compatibility Mode
 
 | Component              | BigQuery | Snowflake | Redshift | PostgreSQL |
 | :--------------------- | :------: | :-------: | :------: | :--------: |

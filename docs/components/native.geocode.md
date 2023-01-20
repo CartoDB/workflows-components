@@ -14,3 +14,7 @@
 ## Outputs
 * `Table with geocoded rows [Table]`: 
 * `Table with rows that could not be geocoded [Table]`: 
+
+## External links
+[BigQuery reference](https://docs.carto.com/analytics-toolbox-bigquery/sql-reference/lds/#geocode_table)
+      
